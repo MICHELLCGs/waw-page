@@ -111,7 +111,7 @@ body {
 }
 
 main {
-  flex-grow: 1; /* Esto permite que el contenido del main ocupe el espacio restante */
+  flex-grow: 1;
 }
 
 footer {
@@ -132,28 +132,28 @@ footer {
   box-sizing: border-box;
 }
 
-/* Estilos personalizados para el botón Siguiente */
+
 .custom-button {
-  /* Agrega aquí tus estilos personalizados */
+  
   width: 120px;
   height: 40px;
-  background-color: transparent; /* Cambiado a transparente */
-  color: #000000; /* Color del texto negro */
-  border: 2px solid #000000; /* Contorno negro */
+  background-color: transparent; 
+  color: #000000; 
+  border: 2px solid #000000; 
   border-radius: 5px;
   margin-top: 30px;
-  /* Elimina el margen izquierdo fijo y centra el botón horizontalmente */
+  
   margin-left: auto;
   margin-right: auto;
-  transition: background-color 0.3s, color 0.3s; /* Agregado efecto de transición */
+  transition: background-color 0.3s, color 0.3s; 
 }
 
 .custom-button:hover {
-  background-color: #000000; /* Color de fondo negro al pasar el ratón */
-  color: #ffffff; /* Color del texto blanco al pasar el ratón */
+  background-color: #000000; 
+  color: #ffffff; 
 }
 
-/* Asegúrate de que el contenedor (.col-md-12) ocupe el 100% del ancho */
+
 .col-md-12 {
   display: flex;
   align-items: center;
@@ -162,8 +162,8 @@ footer {
 }
 
 hr {
-  border-top: 1px solid #000; /* Color y grosor de la línea */
-  margin-top: 20px; /* Espaciado superior */
-  margin-bottom: 20px; /* Espaciado inferior */
+  border-top: 1px solid #000; 
+  margin-top: 20px;
+  margin-bottom: 20px; 
 }
 </style>

@@ -135,13 +135,13 @@
   .bottom-links {
     position: absolute;
     bottom: 0;
-    width: 100%; /* Asegura que ocupe todo el ancho */
+    width: 100%; 
   }
 
   .bottom-links li {
     padding: 10px;
     transition: background-color 0.3s, color 0.3s;
-    width: 100%; /* Asegura que ocupe todo el ancho */
+    width: 100%;
   }
 
   .bottom-links li a {
@@ -149,7 +149,7 @@
     color: white;
     display: flex;
     align-items: center;
-    width: 100%; /* Asegura que ocupe todo el ancho */
+    width: 100%; 
   }
 
   .bottom-links li:hover {

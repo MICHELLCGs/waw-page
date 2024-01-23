@@ -86,6 +86,17 @@ const routes = [
     name: "admiadmins",
     component: () => import("@/views/admin/Adminadmins.vue"),
   },
+  {
+    path: "/ropa",
+    name: "ropa",
+    component: () => import("@/views/Ropa3d.vue"),
+  },
+  {
+    path: "/prenda",
+    name: "prenda",
+    component: () => import("@/views/Prenda.vue"),
+  },
+ 
  
   
 ]
