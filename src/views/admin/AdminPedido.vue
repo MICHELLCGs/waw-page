@@ -260,7 +260,7 @@
     box-sizing: border-box;
   }
   
-  /* Estilos para los botones en los modales de pedidos */
+ 
   .modal-content button {
     margin-top: 10px;
     padding: 8px;
@@ -271,7 +271,7 @@
     cursor: pointer;
   }
   
-  /* Estilo para el botón de cancelar en los modales de pedidos */
+
   .modal-content button.cancel-btn {
     background-color: #f2777a;
   }

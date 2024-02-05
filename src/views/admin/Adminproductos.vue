@@ -294,7 +294,7 @@ header {
   max-width: 600px;
 }
 
-/* Estilos específicos para los campos de entrada en los modales */
+
 .modal-content label {
   display: block;
   margin-top: 10px;
@@ -312,7 +312,7 @@ header {
 
 .modal-content button {
   margin-top: 10px;
-  margin-right: 10px; /* Agregamos margen derecho para separar los botones */
+  margin-right: 10px; 
   padding: 8px;
   background-color: #4caf50;
   color: white;
@@ -323,7 +323,7 @@ header {
 
 .modal-content button.cancel-btn {
   background-color: #f2777a;
-  margin-right: 0; /* No añadimos margen derecho al botón de cancelar */
+  margin-right: 0; 
 }
 .modal-content .button-container {
   display: flex;

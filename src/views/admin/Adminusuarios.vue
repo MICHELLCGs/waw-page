@@ -55,8 +55,6 @@
       <label for="editedUserEmail">Correo:</label>
       <input type="email" v-model="editedUserEmail" id="editedUserEmail" />
 
-      <!-- Puedes agregar campos adicionales según tus necesidades -->
-
       <label for="editedUserPassword">Contraseña:</label>
       <input
         type="password"
@@ -68,7 +66,7 @@
       <button @click="closeEditModal">Cerrar Modal</button>
     </div>
   </div>
-  <!-- modal -->
+  <!-- modal 2-->
   <div v-if="showAddUserModal" class="modal">
     <!-- Contenido del modal -->
     <div class="modal-content">
@@ -120,7 +118,7 @@ export default {
       const user = this.users.find((u) => u.id === userId);
       this.editedUserName = user.name;
       this.editedUserEmail = user.email;
-      // También puedes establecer la contraseña u otros campos según tus necesidades
+     
       this.openEditModal();
     },
     deleteUser(userId) {
@@ -150,21 +148,21 @@ export default {
     },
     closeAddUserModal() {
       this.showAddUserModal = false;
-      // Limpiar los campos del formulario al cerrar el modal
+  
       this.newUserName = "";
       this.newUserEmail = "";
       this.newUserPassword = "";
     },
     saveNewUser() {
-      // Lógica para guardar el nuevo usuario en la lista de usuarios
+     
       const newUser = {
-        id: this.users.length + 1, // Generar un nuevo ID (podrías usar un método más robusto)
+        id: this.users.length + 1, 
         name: this.newUserName,
         email: this.newUserEmail,
       };
       this.users.push(newUser);
 
-      // Cerrar el modal después de guardar el nuevo usuario
+   
       this.closeAddUserModal();
     },
 
@@ -173,10 +171,10 @@ export default {
       if (confirmDelete) {
         console.log(`Eliminar usuario con ID: ${userId}`);
 
-        // Encuentra el índice del usuario en el array
+
         const userIndex = this.users.findIndex((u) => u.id === userId);
 
-        // Elimina el usuario del array
+ 
         if (userIndex !== -1) {
           this.users.splice(userIndex, 1);
           console.log(`Usuario con ID ${userId} eliminado.`);
@@ -233,7 +231,7 @@ header {
   background-color: #f2f2f2;
 }
 
-/* Estilos para el botón de agregar usuario */
+
 .users-container button {
   margin-top: 10px;
   padding: 8px;
@@ -260,11 +258,11 @@ header {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 60%; /* Puedes ajustar el porcentaje según tus preferencias */
-  max-width: 600px; /* O puedes establecer un ancho máximo */
+  width: 60%; 
+  max-width: 600px; 
 }
 
-/* Estilos específicos para los campos de entrada en los modales */
+
 .modal-content label {
   display: block;
   margin-top: 10px;
@@ -279,7 +277,7 @@ header {
   box-sizing: border-box;
 }
 
-/* Estilos para los botones en los modales */
+
 .modal-content button {
   margin-top: 10px;
   padding: 8px;
@@ -290,7 +288,7 @@ header {
   cursor: pointer;
 }
 
-/* Estilo para el botón de cancelar */
+
 .modal-content button.cancel-btn {
   background-color: #f2777a;
 }

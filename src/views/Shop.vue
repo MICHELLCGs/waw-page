@@ -15,8 +15,9 @@
             <option value="menorMayor">Menor a mayor precio</option>
             <option value="tendencia">Tendencia</option>
           </select>
-
+          
         </div>
+        <a style="margin:20px; font-size:40px"><center>Chompas</center></a>
         <div class="row container-fluid">
           
           <div class="col-md-4" style="padding:65px">

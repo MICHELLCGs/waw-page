@@ -118,7 +118,7 @@
         const admin = this.admins.find((a) => a.id === adminId);
         this.editedAdminName = admin.name;
         this.editedAdminEmail = admin.email;
-        // También puedes establecer la contraseña u otros campos según tus necesidades
+       
         this.openEditAdminModal();
       },
       deleteAdmin(adminId) {
@@ -126,10 +126,10 @@
         if (confirmDelete) {
           console.log(`Eliminar administrador con ID: ${adminId}`);
   
-          // Encuentra el índice del administrador en el array
+         
           const adminIndex = this.admins.findIndex((a) => a.id === adminId);
   
-          // Elimina el administrador del array
+         
           if (adminIndex !== -1) {
             this.admins.splice(adminIndex, 1);
             console.log(`Administrador con ID ${adminId} eliminado.`);
@@ -162,15 +162,15 @@
         this.newAdminPassword = "";
       },
       saveNewAdmin() {
-        // Lógica para guardar el nuevo administrador en la lista de administradores
+ 
         const newAdmin = {
-          id: this.admins.length + 1, // Generar un nuevo ID (podrías usar un método más robusto)
+          id: this.admins.length + 1, 
           name: this.newAdminName,
           email: this.newAdminEmail,
         };
         this.admins.push(newAdmin);
   
-        // Cerrar el modal después de guardar el nuevo administrador
+       
         this.closeAddAdminModal();
       },
     },
@@ -208,7 +208,7 @@
     background-color: #f2f2f2;
   }
   
-  /* Estilos para el botón de agregar administrador */
+
   .admins-container button {
     margin-top: 10px;
     padding: 8px;
@@ -219,7 +219,7 @@
     cursor: pointer;
   }
   
-  /* Estilos para la modal de administradores */
+
   .modal {
     position: fixed;
     top: 0;
@@ -241,7 +241,7 @@
     max-width: 600px;
   }
   
-  /* Estilos específicos para los campos de entrada en los modales de administradores */
+  
   .modal-content label {
     display: block;
     margin-top: 10px;
@@ -255,7 +255,7 @@
     box-sizing: border-box;
   }
   
-  /* Estilos para los botones en los modales de administradores */
+  
   .modal-content button {
     margin-top: 10px;
     padding: 8px;
@@ -266,7 +266,7 @@
     cursor: pointer;
   }
   
-  /* Estilo para el botón de cancelar en los modales de administradores */
+  
   .modal-content button.cancel-btn {
     background-color: #f2777a;
   }

@@ -63,7 +63,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 15px; /* Ajusta el valor según tus preferencias */
+    border-radius: 15px; 
   }
   
   .form-group {
@@ -75,7 +75,7 @@ button {
   padding: 10px;
   margin-top: 5px;
   border: 1px solid #ccc;
-  border-radius: 8px; /* Ajusta el valor según tus preferencias */
+  border-radius: 8px; 
 }
 
 button.custom-button {

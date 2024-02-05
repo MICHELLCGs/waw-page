@@ -6,13 +6,13 @@
       <img src="@/assets/img/instagram.png" alt="face" style="height: 32px; padding-right: 30px; margin-bottom: 10px; margin-top: 12px;">
     </div>
 
-<div class="container-fluid"> 
-    <div class="d-flex">
+    <div class="container-fluid footer-links"> 
+  <div class="d-flex">
     <div class="mb-2 mr-4">
       <router-link :to="{ name: 'terminos' }">
         <a class="dropdown-item" :class="{ active: isRouteActive('terminos') }" style="margin-left: 287px; color: #341D16; text-decoration: none; font-size: 25px; font-weight: bold; font-family: 'Montserrat', sans-serif;">
-              Términos y condiciones
-            </a>
+          Términos y condiciones
+        </a>
       </router-link>
     </div>
 
@@ -25,7 +25,7 @@
     </div>
 
     <div class="mb-2">
-      <router-link :to="{ name: 'contactos' }"> <!-- Reemplaza 'anotherRoute' con el nombre de tu ruta -->
+      <router-link :to="{ name: 'contactos' }">
         <a class="dropdown-item" :class="{ active: isRouteActive('contactos') }" style="left: 180px; margin-left: 180px; color: #341D16; text-decoration: none; font-size: 25px; font-weight: bold; font-family: 'Montserrat', sans-serif;">
           Contáctanos
         </a>
@@ -57,5 +57,16 @@ body {
 
 footer {
   margin-top: auto;
+}
+
+/* Evitar resaltado de color para los enlaces activos */
+.footer-links a {
+  background-color: transparent !important;
+}
+
+/* Estilo específico para los enlaces activos si es necesario */
+.footer-links a.active {
+  color: #341D16 !important;
+  /* Otros estilos específicos si es necesario */
 }
 </style>
